@@ -8,9 +8,9 @@ using IdentityServer4.Models;
 using IdentityServer4.Test;
 using Skoruba.IdentityServer4.Constants;
 
-namespace Skoruba.IdentityServer4.Settings
+namespace Skoruba.IdentityServer4
 {
-    public class Config
+    public class IdentityServerConfig
     {
         // scopes define the resources in your system
         public static IEnumerable<IdentityResource> GetIdentityResources()

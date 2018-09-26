@@ -5,6 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Skoruba.IdentityServer4.Admin.Helpers;
+using Skoruba.IdentityServer4.Common;
 
 namespace Skoruba.IdentityServer4.Admin
 {
@@ -36,6 +37,7 @@ namespace Skoruba.IdentityServer4.Admin
 
         public void ConfigureServices(IServiceCollection services)
         {
+            Configuration.ImportConfig();
             services.AddDbContexts(HostingEnvironment, Configuration);
             services.AddAuthentication(HostingEnvironment);
             services.AddServices();
