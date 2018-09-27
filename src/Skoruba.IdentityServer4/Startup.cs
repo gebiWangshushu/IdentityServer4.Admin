@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Skoruba.IdentityServer4.Common;
-//using Skoruba.IdentityServer4.Settings;
 
 
 namespace Skoruba.IdentityServer4
