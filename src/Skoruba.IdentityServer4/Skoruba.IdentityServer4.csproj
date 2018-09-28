@@ -26,6 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Skoruba.IdentityServer4.Admin.BusinessLogic\Skoruba.IdentityServer4.Admin.BusinessLogic.csproj" />
     <ProjectReference Include="..\Skoruba.IdentityServer4.Common\Skoruba.IdentityServer4.Common.csproj" />
   </ItemGroup>
 

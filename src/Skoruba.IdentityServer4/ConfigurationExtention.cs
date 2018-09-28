@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Skoruba.IdentityServer4.Common;
+using Skoruba.IdentityServer4.Custom;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,6 +27,7 @@ namespace Skoruba.IdentityServer4
                 services.AddIdentityServer()
                         .AddDeveloperSigningCredential()
                         .AddTestUsers(IdentityServerConfig.GetUsers())
+                       // .AddResourceOwnerValidator<CustomResourceOwnerPasswordValidator>()
                         .AddConfigurationStore(options =>
                         {
                             options.ConfigureDbContext = builder =>
