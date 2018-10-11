@@ -14,10 +14,11 @@ namespace Skoruba.IdentityServer4.Attribute
             {
                 if (Configuration == null)
                 {
+                    Console.WriteLine(AppContext.BaseDirectory);
                     var builder = new ConfigurationBuilder()
+                        .SetBasePath(AppContext.BaseDirectory)
                         .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
                        // .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true, reloadOnChange: true)
-                       // .AddEnvironmentVariables();
                     Configuration = builder.Build();
                 }                
                 return Configuration[key];
