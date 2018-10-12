@@ -56,7 +56,7 @@ namespace Skoruba.IdentityServer4.Custom
             //    context.Result = new GrantValidationResult(TokenRequestErrors.InvalidGrant, "invalid custom credential");
             //}
 
-            var user = _identityService.GetUserAsync(new UserDto {UserName= context.UserName. });
+            var user = _identityService.GetUserAsync(new UserDto {UserName= context.UserName });
 
             return Task.CompletedTask;
         }
